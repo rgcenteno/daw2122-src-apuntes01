@@ -27,10 +27,10 @@ while(count($_array) > $i && $elementoBuscado != $_array[$i]){
 }
 echo "<h2>Búsqueda con while</h2>";
 if($elementoBuscado == $_array[$i]){
-    printf("<p class='text-success'>Elemento %d encontrado en la posición %d del array</p>", $elementoBuscado, $i);
+    printf("<p class='text-success'>Elemento %d atopado na posición %d do array</p>", $elementoBuscado, $i);
 }
 else{
-    printf("<p class='text-danger'>Elemento %d no encontrado en el array</p>", $elementoBuscado, $i);
+    printf("<p class='text-danger'>Elemento %d non atopado no array</p>", $elementoBuscado, $i);
 }
 
 //Uso de do..while
@@ -43,15 +43,15 @@ do{
 echo "<h2>Búsqueda con do .. while</h2>";
 
 if($elementoBuscado == $_array[$i]){
-    printf("<p class='text-success'>Elemento %d encontrado en la posición %d del array</p>", $elementoBuscado, $i);
+    printf("<p class='text-success'>Elemento %d atopado na posición %d do array</p>", $elementoBuscado, $i);
 }
 else{
-    printf("<p class='text-danger'>Elemento %d no encontrado en el array</p>", $elementoBuscado, $i);
+    printf("<p class='text-danger'>Elemento %d non atopado no array</p>", $elementoBuscado, $i);
 }
 
 echo "<h2>For para recorrer array </h2>";
 //for para recorrer un array
-echo '<p>Imprimo por pantalla el array</p>';
+echo '<p>Imprimo por pantalla o array</p>';
 echo '<p>';
 for($i = 0; $i < count($_array); $i++){
     printf("%d ", $_array[$i]);
@@ -60,7 +60,7 @@ echo '</p>';
 
 //Uso de foreach para recorrer array
 echo "<h2>Foreach recorrer array</h2>";
-echo '<p>Imprimo por pantalla el array con <strong>foreach</strong></p>';
+echo '<p>Imprimo por pantalla o array con <strong>foreach</strong></p>';
 echo '<p>';
 foreach($_array as $num){
     printf("%d ", $num);
@@ -69,7 +69,7 @@ echo '</p>';
 
 echo "<h2>Foreach recorrer array indexado</h2>";
 //Uso de foreach para recorrer array indexado por clave valor
-echo '<p>Imprimo por pantalla el array indexado con <strong>foreach</strong></p>';
+echo '<p>Imprimo por pantalla o array indexado con <strong>foreach</strong></p>';
 echo '<p>';
 foreach($_map as $clave => $valor){
     printf("<p>%s -> %d</p>", $clave, $valor);
@@ -80,7 +80,7 @@ echo '</p>';
 //https://www.php.net/manual/en/array.sorting.php
 echo "<h2>Foreach recorrer array ordenado por clave</h2>";
 ksort($_map);
-echo '<p>Ordeno el array indexado por clave y lo muestro con <strong>foreach</strong></p>';
+echo '<p>Ordeno o  array  indexado por clave e o amoso con <strong>foreach</strong></p>';
 echo '<p>';
 foreach($_map as $clave => $valor){
     printf("<p>%s -> %d</p>", $clave, $valor);
@@ -89,7 +89,7 @@ echo '</p>';
 
 echo "<h2>Foreach recorrer array ordenado por valor</h2>";
 asort($_map);
-echo '<p>Ordeno el array indexado por valor y lo muestro con <strong>foreach</strong></p>';
+echo '<p>Ordeno o array indexado por valor e o amoso con <strong>foreach</strong></p>';
 echo '<p>';
 foreach($_map as $clave => $valor){
     printf("<p>%s -> %d</p>", $clave, $valor);
